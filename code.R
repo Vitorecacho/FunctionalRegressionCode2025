@@ -1,3 +1,28 @@
+################################################################################
+# TITLE: Landslide Susceptibility Modeling using Functional Data Analysis
+#
+# DEVELOPED BY: Vitor Recacho
+#
+# DESCRIPTION:
+# This script implements a comparative analysis between Functional Generalized 
+# Additive Models (FGAM) and standard Generalized Additive Models (GAM) for 
+# landslide prediction. It specifically addresses the non-linear cumulative 
+# effects of antecedent precipitation using functional regression techniques.
+#
+# KEY FEATURES:
+# 1. Functional Data Processing: Converts daily rainfall time-series into 
+#    cumulative functional curves for FGAM implementation.
+# 2. Model Comparison: Fits Full and Null versions of FGAM (via 'refund') 
+#    and GAM (via 'mgcv').
+# 3. Spatial Cross-Validation: Implements Leave-One-Event-Out (LOOCV) to 
+#    test model transferability across different spatial landslide events.
+# 4. Random Cross-Validation: Performs 100-repeat sensitivity analysis 
+#    across varying training ratios (5% to 90%) to assess model stability.
+# 5. Advanced Visualization: Generates 2D partial effect plots, 3D interactive 
+#    surface plots (precipitation x time), and ROC/Precision-Recall curves.
+#
+################################################################################
+
 rm(list=ls())
 
 #### 1. SETUP AND CONFIGURATION ================================================
