@@ -1,4 +1,4 @@
-Project Title: Advanced Landslide Susceptibility Modeling with FGAM and GAM
+Project Title: Landslide Susceptibility Modeling using Functional Data Analysis
 
 Developer: Vitor Recacho
 
