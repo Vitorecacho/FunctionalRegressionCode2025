@@ -3,23 +3,27 @@
 #
 # DEVELOPED BY: Vitor Recacho
 #
+# ASSOCIATED MANUSCRIPT:
+# This code implements the framework presented in the research paper:
+# "On the use of rainfall time series for regional landslide prediction 
+#  by means of functional regression"
+#
+# AUTHORS: 
+# Mahnoor Ahmed, Vitor Salomão Recacho, Giacomo Titti, Taro Uchida, 
+# Lisa Borgatti, Adriano Barasal Morales, Mirko Francioni, Luigi Lombardo
+#
 # DESCRIPTION:
-# This script implements a comparative analysis between Functional Generalized 
-# Additive Models (FGAM) and standard Generalized Additive Models (GAM) for 
-# landslide prediction. It specifically addresses the non-linear cumulative 
-# effects of antecedent precipitation using functional regression techniques.
+# This script executes the comparative analysis between Functional Generalized 
+# Additive Models (FGAM) and standard Generalized Additive Models (GAM). 
+# It specifically addresses the non-linear cumulative effects of antecedent 
+# precipitation using functional regression techniques.
 #
 # KEY FEATURES:
-# 1. Functional Data Processing: Converts daily rainfall time-series into 
-#    cumulative functional curves for FGAM implementation.
-# 2. Model Comparison: Fits Full and Null versions of FGAM (via 'refund') 
-#    and GAM (via 'mgcv').
-# 3. Spatial Cross-Validation: Implements Leave-One-Event-Out (LOOCV) to 
-#    test model transferability across different spatial landslide events.
-# 4. Random Cross-Validation: Performs 100-repeat sensitivity analysis 
-#    across varying training ratios (5% to 90%) to assess model stability.
-# 5. Advanced Visualization: Generates 2D partial effect plots, 3D interactive 
-#    surface plots (precipitation x time), and ROC/Precision-Recall curves.
+# 1. Functional Data Processing (Cumulative Rainfall Curves)
+# 2. Model Comparison (Full/Null FGAM vs. Full/Null GAM)
+# 3. Spatial Cross-Validation (Leave-One-Event-Out)
+# 4. Random Cross-Validation (Sensitivity Analysis)
+# 5. Advanced Visualization (3D Surface & Partial Effects)
 #
 ################################################################################
 
